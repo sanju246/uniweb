@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Style */
+.notice-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3e50;
+    margin-bottom: 40px;
+}
+
+/* Notice Card Styles */
+.notice-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.notice-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.notice-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.notice-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.btn-primary:hover {
+    background-color: #375aeb;
+    border-color: #375aeb;
+}
+
+/* Collapsing Section Styles */
+.notice-details {
+    padding: 15px;
+    background-color: #f7f9fc;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .notice-card {
+        margin-bottom: 20px;
+    }
+
+    .notice-title {
+        font-size: 2rem;
+    }
+}

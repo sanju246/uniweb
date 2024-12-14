@@ -1,0 +1,40 @@
+/* Heading Style */
+#director-message h1 {
+    text-align: center; /* Heading centered */
+    font-size: 2.5rem; /* Large font size */
+    font-weight: bold; /* Bold heading */
+    color: #2d3e50; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    padding-top: 40px;
+}
+
+/* Image Settings for Director's Photo */
+#director-message img {
+    width: 160px; /* Adjust the width */
+    height: 250px; /* Adjust the height */
+    border: 5px solid #021603; /* Border around the image */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center horizontally */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Content for Director's Message */
+#director-message p {
+    font-size: 1.125rem; /* Normal readable font size */
+    line-height: 1.8; /* Line spacing for easy reading */
+    color: #0b0101; /* Dark text color */
+    text-align: left; /* Align text to the left */
+    margin-top: 25px; /* Margin above the paragraph */
+    text-indent: 30px; /* Indentation for the first line */
+    font-weight: normal; /* Normal font weight */
+    font-family: 'Times New Roman', Times, serif; /* Classic serif font */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* For small screens */
+    #director-message p {
+        font-size: 1rem; /* Smaller text */
+        text-indent: 20px; /* Less indentation */
+    }
+}
