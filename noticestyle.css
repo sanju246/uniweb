@@ -1,3 +1,50 @@
+.banner{
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide {
+    0% {
+        /*1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+    33% {
+        /*2nd img*/
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+    }
+    66% {
+        /*3rd img*/
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+    }
+    100% {
+         /*Back to 1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-title{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: fantasy;
+    top: 50%;
+    transform: translateY(-50%);
+}
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -7,14 +54,6 @@ body {
     padding: 0;
 }
 
-/* Title Style */
-.notice-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2d3e50;
-    margin-bottom: 40px;
-}
 
 /* Notice Card Styles */
 .notice-card {
@@ -24,6 +63,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     height: 100%;
+    margin-top: 20px;
 }
 
 .notice-card:hover {
@@ -37,6 +77,14 @@ body {
     color: #333;
     margin-bottom: 15px;
 }
+.notice-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    max-height: 250px; 
+    border-radius: 8px;
+}
+
 
 .notice-description {
     font-size: 1rem;
@@ -75,4 +123,48 @@ body {
     .notice-title {
         font-size: 2rem;
     }
+}
+.footer-logo{
+    height: 70px;
+    width: 70px;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-links:hover{
+    color: aqua;
+}
+
+.logo-nav{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: powderblue;
+    color: crimson;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
+    background-color: yellow; 
+    color: red;
+}
+
+#aboutDropdown{
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0;
+}
+
+#aboutDropdown:hover{
+    color: crimson;
+    background-color:skyblue;
+}
+
+.dropdown-item{
+    font-style: oblique;
 }

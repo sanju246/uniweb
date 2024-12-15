@@ -1,40 +1,132 @@
-/* Heading Style */
-#director-message h1 {
-    text-align: center; /* Heading centered */
-    font-size: 2.5rem; /* Large font size */
-    font-weight: bold; /* Bold heading */
-    color: #2d3e50; /* Dark color for the heading */
-    margin-bottom: 20px; /* Space below the heading */
-    padding-top: 40px;
+.banner{
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    animation: slide 15s infinite;
 }
+
+@keyframes slide {
+    0% {
+        /*1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+    33% {
+        /*2nd img*/
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+    }
+    66% {
+        /*3rd img*/
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+    }
+    100% {
+         /*Back to 1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-title{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: fantasy;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Image Settings for Director's Photo */
+#director-message img {
+    width: 160px; 
+    height: 250px; 
+    border: 5px solid #021603; 
+    display: block;
+    margin: 0 auto; 
+    object-fit: cover; 
+}
+
+
 
 /* Image Settings for Director's Photo */
 #director-message img {
-    width: 160px; /* Adjust the width */
-    height: 250px; /* Adjust the height */
-    border: 5px solid #021603; /* Border around the image */
-    display: block; /* Center the image */
-    margin: 0 auto; /* Center horizontally */
-    object-fit: cover; /* Ensure the image covers the area */
+    width: 160px; 
+    height: 250px; 
+    border: 5px solid #021603; 
+    display: block;
+    margin: 0 auto; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
 
-/* Content for Director's Message */
 #director-message p {
-    font-size: 1.125rem; /* Normal readable font size */
-    line-height: 1.8; /* Line spacing for easy reading */
-    color: #0b0101; /* Dark text color */
-    text-align: left; /* Align text to the left */
-    margin-top: 25px; /* Margin above the paragraph */
-    text-indent: 30px; /* Indentation for the first line */
-    font-weight: normal; /* Normal font weight */
-    font-family: 'Times New Roman', Times, serif; /* Classic serif font */
+    font-size: 1.125rem; 
+    line-height: 1.8; 
+    color: #0b0101; 
+    text-align: justify; 
+    margin-top: 25px; 
+    font-weight: normal; 
+    font-family: 'Times New Roman', Times, serif; 
+    padding: 0 50px; 
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    /* For small screens */
+ 
     #director-message p {
-        font-size: 1rem; /* Smaller text */
-        text-indent: 20px; /* Less indentation */
+        font-size: 1rem;
     }
+}
+.footer-logo{
+    height: 70px;
+    width: 70px;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-links:hover{
+    color: aqua;
+}
+
+.logo-nav{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: powderblue;
+    color: crimson;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
+    background-color: yellow; 
+    color: red;
+}
+
+#aboutDropdown{
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0;
+}
+
+#aboutDropdown:hover{
+    color: crimson;
+    background-color:skyblue;
+}
+
+.dropdown-item{
+    font-style: oblique;
 }
