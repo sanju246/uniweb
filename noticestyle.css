@@ -124,6 +124,27 @@ body {
         font-size: 2rem;
     }
 }
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .testimonial img {
+        max-width: 120px;
+    }
+
+    #clubs h4 {
+        font-size: 1.1rem;
+    }
+}
 .footer-logo{
     height: 70px;
     width: 70px;

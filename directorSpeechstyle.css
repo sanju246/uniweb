@@ -45,17 +45,6 @@
     top: 50%;
     transform: translateY(-50%);
 }
-/* Image Settings for Director's Photo */
-#director-message img {
-    width: 160px; 
-    height: 250px; 
-    border: 5px solid #021603; 
-    display: block;
-    margin: 0 auto; 
-    object-fit: cover; 
-}
-
-
 
 /* Image Settings for Director's Photo */
 #director-message img {
@@ -84,6 +73,29 @@
  
     #director-message p {
         font-size: 1rem;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .testimonial img {
+        max-width: 120px;
+    }
+
+    #clubs h4 {
+        font-size: 1.1rem;
     }
 }
 .footer-logo{
