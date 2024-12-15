@@ -1,0 +1,119 @@
+.banner{
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide {
+    0% {
+        /*1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+    33% {
+        /*2nd img*/
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+    }
+    66% {
+        /*3rd img*/
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+    }
+    100% {
+         /*Back to 1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-title{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: fantasy;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-logo{
+    height: 70px;
+    width: 70px;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-links:hover{
+    color: aqua;
+}
+
+.logo-nav{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: powderblue;
+    color: crimson;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
+    background-color: yellow; 
+    color: red;
+}
+
+#aboutDropdown{
+    font-weight: bolder;
+    padding: 20px;
+    margin: 0;
+}
+
+#aboutDropdown:hover{
+    color: crimson;
+    background-color:skyblue;
+}
+
+.dropdown-item{
+    font-style: oblique;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.moving-notice-wrapper {
+    overflow: hidden; /* Hides the overflowing content */
+    width: 100%; /* Ensures it takes the full width of the card */
+}
+
+.moving-notice {
+    display: inline-block;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    animation: move 20s linear infinite; /* Animation that moves text */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%); /* Start from right side */
+    }
+    100% {
+        transform: translateX(-100%); /* End at the left side */
+    }
+}
+
