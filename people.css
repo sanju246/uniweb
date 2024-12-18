@@ -1,3 +1,6 @@
+.navbar {
+    height: 81px;
+}
 .banner{
     background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
     background-position: center;
@@ -44,12 +47,6 @@
     font-family: fantasy;
     top: 50%;
     transform: translateY(-50%);
-}
-
-/* Body Styling */
-body {
-    background-color: #f9f9f9;
-    color: #333;
 }
 
 
