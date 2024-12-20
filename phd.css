@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .banner{
     background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
     background-position: center;
@@ -45,106 +50,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fb;
-    color: #333;
-    margin: 0;
-}
 
-
-/* Notice Card Styles */
-.notice-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    height: 100%;
-    margin-top: 20px;
-    padding: 0 50px;
-}
-
-.notice-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-
-.notice-heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-}
-.notice-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; 
-    max-height: 250px; 
-    border-radius: 8px;
-}
-
-
-.notice-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Button Styles */
-.btn-primary {
-    background-color: #4e73df;
-    border-color: #4e73df;
-}
-
-.btn-primary:hover {
-    background-color: #375aeb;
-    border-color: #375aeb;
-}
-
-/* Collapsing Section Styles */
-.notice-details {
-    padding: 15px;
-    background-color: #f7f9fc;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #444;
-}
-
-/* Responsive Design */
-@media (max-width: 767px) {
-    .notice-card {
-        margin-bottom: 20px;
-    }
-
-    .notice-title {
-        font-size: 2rem;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #212529;
-    color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .testimonial img {
-        max-width: 120px;
-    }
-
-    #clubs h4 {
-        font-size: 1.1rem;
-    }
-}
 .footer-logo{
     height: 70px;
     width: 70px;
@@ -188,4 +94,40 @@ footer {
 
 .dropdown-item{
     font-style: oblique;
+}
+
+.info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.moving-notice-wrapper {
+    overflow: hidden; /* Hides the overflowing content */
+    width: 100%; /* Ensures it takes the full width of the card */
+}
+
+.moving-notice {
+    display: inline-block;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    animation: move 20s linear infinite; /* Animation that moves text */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%); /* Start from right side */
+    }
+    100% {
+        transform: translateX(-100%); /* End at the left side */
+    }
+}
+
+.contact-info-links{
+    color: black;
+    text-decoration: none;
+    
+}
+
+.contact-info-links:hover{
+    color: blue;
 }

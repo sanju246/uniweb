@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admission</title>
-  <link rel="icon" href="https://w7.pngwing.com/pngs/437/522/png-transparent-jahangirnagar-university-school-college-dhaka-others-text-logo-symmetry.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/437/522/png-transparent-jahangirnagar-university-school-college-dhaka-others-text-logo-symmetry.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+.body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 
-  <style>
-  body, html, content{
-    margin: 0;
-  }
-
-  
- .headerSec{
+}
+.headerSec{
   background-image: linear-gradient(to bottom, rgba(117, 118, 126, 0.52), rgba(0, 0, 0, 0.73)),url("bg4.png");
   background-repeat: no-repeat;
   background-size: 100% 530px;
@@ -28,64 +28,64 @@
   height: 450px;
   background-attachment: fixed;
   text-shadow: 0 0 40px #040303;
-
   }
+.desc{
+    display: block;
+    text-align: center;
 
-.description{
-  display: block;
-  align-items:center;
-  padding: 0px 50px 40px 0px;
-  font-weight: lighter;
-  color: rgb(115, 113, 113);
-  font-size: 18px;
-  width: 60%;
-  line-height: 30px;
-  justify-content: space-around;
-  float: left;
-  text-align: justify;
-}
-.vidDesc{
-  display: block;
-  padding: 200px 0px 40px 0px;
-  color: rgb(115, 113, 113);
-  font-size: 18px;
-  width: 60%;
-  line-height: 30px;
-  justify-content: space-between;
-  float: right;
-  text-align:right;
 }
 
-.bundle{
-  padding: 50px 100px 50px 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.btn{
-    width: 300px;
-    height: 50px;
-    background-color: rgb(44, 42, 42);
-    color: aliceblue;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items:center;
-    justify-content: center;
+.subHeading{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-    border-radius: 0px;
+    padding: 50px 50px 20px 50px;
+
 }
-.btn:hover{
-    background-color: rgb(192, 189, 199);
-    color: #040303;
+.event_container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.event_desc{
+    padding: 16px;
+}
+.event_desc h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.event_desc p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.event_card{
+    width: 275px;
+    background-color: rgb(247, 235, 219);
+    overflow: hidden;
+    box-shadow: 2px 4px 6px rgba(0,0, 0, 0.2);
+    margin: 20px;
+    transition: transform .5s;
+}
+.event_card:hover{
+    transform: scale(1.05);
+}
+
+.event_card img{
+    width: 100%;
+    height: auto;
 
 }
 
-a{
-    text-decoration: none;
+.headerSec h1{
+    margin-top: 60%;
 }
+
+
 
 .footer-logo{
     height: 70px;
@@ -134,9 +134,12 @@ a{
 }
 
 
+
+
 </style>
 </head>
 <body>
+
 
   <header>
     <!--Navbar-->
@@ -232,51 +235,99 @@ a{
 </header>
 
 
-    <div class="content">
+  <div class="headerSec"> <h1> Events </h1></div>
 
-      <div class="headerSec">
-      <h1>Admission</h1>
-    </div>
-    <div class="bundle">
-    <div class="description">
-      <h1 style="font-size: 30px; margin-bottom: 0px;"> Description</h1> <br>
 
-      <p>
-        Institute of Business Administration, Jahangirnagar University (IBA-JU) currently offers – 
-        BBA at undergraduate level, regular MBA & Weekend MBA at postgraduate level – and two research based programs, 
-        M.Phil. and Ph.D. at higher study level.
-      
-     </p>
-    </div>
-    <div class="image" >
-      <img src="grad.jpg" height="300px" style="border: 4px; border-radius: 0%;">
-    </div>
-  </div>
 
-  <div class="bundle">
-    <div class="vid">
-      <iframe width="530" height="300" style="border-radius: 0%;"
-      src="https://www.youtube.com/embed/uUj3AMYLYv0?si=kg_7AS3v2nm9Ivkq">
-    </iframe>
-    </div>
- <div class="vidDesc">
-  <h1 style="font-size: 30px; align-items: end;"> Application Process</h1> 
-  <p>
-   ← Video demonstration of the online admission application process 
-  </p>
-
- </div>
+    <div class="desc">
     
-  </div>
-
-  </div>
-
-  <a href="https://static23.ju-admission.org/justatic2023/assets/downloads/IBA-JU%20Admission%20Circular%202023-24.pdf">
-    <div class="btn">
-      Admission circular
-      
+        <p class="subHeading">At IBA-JU, we believe in fostering a vibrant academic and professional community through
+            engaging events that inspire learning, networking, and growth. Our events bring together
+            students, alumni, industry leaders, and academics to share knowledge, explore new ideas, and
+            celebrate achievements.</p>
     </div>
-  </a>
+    <div class="event_container">
+  
+        <div class="event_card">
+         <img src="arch.jpg">
+          <div class="event_desc">
+            <h3>Event Name</h3>
+            <p>Event Description</p>
+          </div>
+        </div>
+
+
+
+        <div class="event_card">
+            <img src="lib.jpg">
+             <div class="event_desc">
+               <h3>Event Name</h3>
+               <p>Event Description</p>
+             </div>
+           </div>
+
+
+
+           <div class="event_card">
+            <img src="candle.jpg">
+             <div class="event_desc">
+               <h3>Event Name</h3>
+               <p>Event Description</p>
+             </div>
+           </div>
+
+
+
+           <div class="event_card">
+            <img src="arch2.jpg">
+             <div class="event_desc">
+               <h3>Event Name</h3>
+               <p>Event Description</p>
+             </div>
+           </div>
+
+
+
+
+
+           <div class="event_card" >
+            <img src="lib_const.jpg">
+             <div class="event_desc">
+               <h3>Event Name</h3>
+               <p>Event Description </p>
+             </div>
+           </div>
+       
+
+           <div class="event_card">
+            <img src="arch3.jpg">
+             <div class="event_desc">
+               <h3>Event Name</h3>
+               <p>Event Description</p>
+             </div>
+           </div>
+
+
+
+           <div class="event_card">
+            <img src="arch4.jpg">
+             <div class="event_desc">
+               <h3>Event Name</h3>
+               <p>Event Description </p>
+             </div>
+           </div>
+
+
+
+           <div class="event_card">
+            <img src="audit.png">
+             <div class="event_desc">
+               <h3>Event Name</h3>
+               <p> Event Description</p>
+             </div>
+           </div>
+    
+    </div>
 
 
 
@@ -366,6 +417,6 @@ a{
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     
+   
 </body>
 </html>
-
