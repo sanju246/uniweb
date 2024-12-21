@@ -1,191 +1,323 @@
-.banner{
-    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    position: relative;
-    animation: slide 15s infinite;
+body{
+
+    margin: 0;
+
+    overflow-x: hidden;
+
 }
+
+
+
+.banner{
+
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 50vh;
+
+    position: relative;
+
+    animation: slide 15s infinite;
+
+}
+
+
 
 @keyframes slide {
+
     0% {
+
         /*1st img*/
+
         background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
     }
+
     33% {
+
         /*2nd img*/
+
         background-image: url('https://pis.juniv.edu/slide3.jpg');
+
     }
+
     66% {
+
         /*3rd img*/
+
         background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+
     }
+
     100% {
+
          /*Back to 1st img*/
+
         background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
     }
+
 }
+
+
 
 .overlay{
+
     position: absolute;
+
     top: 0;
+
     left: 0;
+
     height: 100%;
+
     width: 100%;
+
     background: rgba(0, 0, 0, 0.5);
+
 }
+
+
 
 .banner-title{
+
     position: relative;
+
     text-align: center;
+
     color: white;
+
     font-size: 3rem;
+
     font-family: fantasy;
+
     top: 50%;
+
     transform: translateY(-50%);
-}
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fb;
-    color: #333;
-    margin: 0;
+
+    font-family: "Roboto Slab", serif;
+
 }
 
 
-/* Notice Card Styles */
-.notice-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    height: 100%;
-    margin-top: 20px;
-    padding: 0 50px;
-}
-
-.notice-card:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
 
 .notice-heading {
+    font-family: "Poppins", serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #f8f9fa;
+}
+.notice-description {
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.notice-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #1b2b50;
+}
+.notice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn {
+    font-family: "Roboto Slab", serif;
+    font-size: 1rem;
+}
+.pdf-download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
 }
-.notice-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; 
-    max-height: 250px; 
-    border-radius: 8px;
+.pdf-download p {
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    color: #000;
+    font-size: 1.6rem;
 }
 
 
-.notice-description {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
+/* footer */
+footer{
+
+    background-color: #F6F6F6;
+
 }
 
-/* Button Styles */
-.btn-primary {
-    background-color: #4e73df;
-    border-color: #4e73df;
+
+
+#upper-footer{
+
+    background-color: #F6F6F6;
+
 }
 
-.btn-primary:hover {
-    background-color: #375aeb;
-    border-color: #375aeb;
+
+
+#lower-footer{
+
+    background-color: white;
+
 }
 
-/* Collapsing Section Styles */
-.notice-details {
-    padding: 15px;
-    background-color: #f7f9fc;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #444;
-}
 
-/* Responsive Design */
-@media (max-width: 767px) {
-    .notice-card {
-        margin-bottom: 20px;
-    }
 
-    .notice-title {
-        font-size: 2rem;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #212529;
-    color: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .testimonial img {
-        max-width: 120px;
-    }
-
-    #clubs h4 {
-        font-size: 1.1rem;
-    }
-}
 .footer-logo{
+
     height: 70px;
+
     width: 70px;
+
 }
+
+
 
 .footer-links{
-    color: white;
+
+    font-family: "Poppins", serif;
+
+    color: gray;
+
     text-decoration: none;
+
     
+
 }
+
+
 
 .footer-links:hover{
-    color: aqua;
+
+    color: crimson;
+
 }
+
+
 
 .logo-nav{
+
     height: 50px;
+
     width: 50px;
+
 }
+
+
 
 .navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
-    background-color: powderblue;
+
     color: crimson;
+
 }
 
-.navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
-    background-color: yellow; 
-    color: red;
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+
+    color: crimson;
+
+    background-color: #F8F9FA;
+
 }
+
+
+
+
 
 #aboutDropdown{
-    font-weight: bolder;
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
     padding: 20px;
+
     margin: 0;
+
 }
+
+
 
 #aboutDropdown:hover{
+
     color: crimson;
-    background-color:skyblue;
+
+    text-decoration: underline;
+
 }
 
+
+
 .dropdown-item{
-    font-style: oblique;
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    margin: 0;
+
+}
+
+
+
+.dropdown-item-list{
+
+    padding-top: 5px;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+p{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+span{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+thead{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+tbody{
+
+    font-family: "Poppins", serif;
+
 }
