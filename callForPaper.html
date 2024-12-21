@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call for Papers</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://w7.pngwing.com/pngs/437/522/png-transparent-jahangirnagar-university-school-college-dhaka-others-text-logo-symmetry.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -14,8 +17,6 @@
 background-image: linear-gradient(to bottom, rgba(120, 122, 137, 0.52), rgba(0, 0, 0, 0.73)),url("bg4.png");
 background-repeat: no-repeat;
 background-size: 100% 530px;
-
-font-family: 'Times New Roman', Times, serif;
 font-size: 24px;
 color:white;
 display: flex;
@@ -28,7 +29,6 @@ text-shadow: 0 0 40px #040303;
 .content{
     margin-top: 60px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .img_container{
@@ -71,9 +71,86 @@ h4{
 
     
 }
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.banner{
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide {
+    0% {
+        /*1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+    33% {
+        /*2nd img*/
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+    }
+    66% {
+        /*3rd img*/
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+    }
+    100% {
+         /*Back to 1st img*/
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-title{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: fantasy;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Roboto Slab", serif;
+}
+
+footer{
+    background-color: #F6F6F6;
+}
+
+#upper-footer{
+    background-color: #F6F6F6;
+}
+
+#lower-footer{
+    background-color: white;
+}
+
+.footer-logo{
+    height: 70px;
+    width: 70px;
+}
+
+.footer-links{
+    font-family: "Poppins", serif;
+    color: gray;
+    text-decoration: none;
+    
+}
 
 .footer-links:hover{
-    color: aqua;
+    color: crimson;
 }
 
 .logo-nav{
@@ -82,29 +159,57 @@ h4{
 }
 
 .navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
-    background-color: powderblue;
     color: crimson;
 }
 
-.navbar-nav .nav-item .dropdown-menu .dropdown-item:active {
-    background-color: yellow; 
-    color: red;
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+    color: crimson;
+    background-color: #F8F9FA;
 }
 
 
 #aboutDropdown{
-    font-weight: bolder;
+    font-family: "Poppins", serif;
+    color: black;
+    font-weight:500;
     padding: 20px;
     margin: 0;
 }
 
 #aboutDropdown:hover{
     color: crimson;
-    background-color:skyblue;
+    text-decoration: underline;
 }
 
 .dropdown-item{
-    font-style: oblique;
+    font-family: "Poppins", serif;
+    color: black;
+    font-weight:500;
+    margin: 0;
+}
+
+.dropdown-item-list{
+    padding-top: 5px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Slab", serif;
+}
+
+p{
+    font-family: "Poppins", serif;
+}
+
+span{
+    font-family: "Poppins", serif;
+}
+
+thead{
+    font-family: "Roboto Slab", serif;
+}
+
+tbody{
+    font-family: "Poppins", serif;
 }
     </style>
 </head>
@@ -113,12 +218,11 @@ h4{
 
 
 
-    <header>
-        <!--Navbar-->
+    <header><!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
             <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://w7.pngwing.com/pngs/437/522/png-transparent-jahangirnagar-university-school-college-dhaka-others-text-logo-symmetry.png" alt="Logo" class="me-2 logo-nav">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYlbsTrgYJ3f7N-4_XgxyE9s4zMmAVZUpbw&s" alt="Logo" class="me-2 logo-nav">
                 IBA-JU
             </a>
 
@@ -138,64 +242,69 @@ h4{
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
                     <ul class="dropdown-menu bg-light border-0">
-                        <li><a class="dropdown-item" href="directorSpeech.html">Message from Director</a>
+                        <li class="dropdown-item-list"><a class="dropdown-item" href="directorSpeech.html">Message from Director</a>
                         </li>
-                        <li><a class="dropdown-item" href="people.html">People</a>
+                        <li class="dropdown-item-list"><a class="dropdown-item" href="people.html">People</a>
                         </li>
-                        <li><a class="dropdown-item" href="club.html">Clubs</a>
+                        <li class="dropdown-item-list"><a class="dropdown-item" href="club.html">Clubs</a>
                         </li>
-                        <li><a class="dropdown-item" href="alumni.html">Alumni Association</a>
+                        <li class="dropdown-item-list"><a class="dropdown-item" href="alumni.html">Alumni Association</a>
                         </li>
-                        <li><a class="dropdown-item" href="campuslife.html">Campus Life</a>
+                        <li class="dropdown-item-list"><a class="dropdown-item" href="campuslife.html">Campus Life</a>
                         </li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Program</a>
                         <ul class="dropdown-menu bg-light border-0">
-                            <li><a class="dropdown-item" href="Program.html">Overview</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="Program.html">Overview</a>
                             </li>
-                            <li><a class="dropdown-item" href="bba.html">BBA</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="bba.html">BBA</a>
                             </li>
-                            <li><a class="dropdown-item" href="mba.html">MBA</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="mba.html">MBA</a>
                             </li>
-                            <li><a class="dropdown-item" href="wmba.html">WMBA</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="wmba.html">WMBA</a>
                             </li>
-                            <li><a class="dropdown-item" href="phd.html">PhD</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="phd.html">PhD</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admission</a>
                         <ul class="dropdown-menu bg-light border-0">
-                            <li><a class="dropdown-item" href="admission.html">Overview</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="admission.html">Overview</a>
                             </li>
-                            <li><a class="dropdown-item" href="bbaAdmission.html">BBA Admission</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="bbaAdmission.html">BBA Admission</a>
                             </li>
-                            <li><a class="dropdown-item" href="mbaAdmission.html">MBA Admission</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="mbaAdmission.html">MBA Admission</a>
                             </li>
-                            <li><a class="dropdown-item" href="wmbaAdmission.html">WMBA Admission</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="wmbaAdmission.html">WMBA Admission</a>
                             </li>
-                            <li><a class="dropdown-item" href="phdEnrollment.html">PhD Enrollment</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="phdEnrollment.html">PhD Enrollment</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Journal</a>
                         <ul class="dropdown-menu bg-light border-0">
-                            <li><a class="dropdown-item" href="journal.html">Overview</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="journal.html">Overview</a>
                             </li>
-                            <li><a class="dropdown-item" href="callForPaper.html">Call for Papers</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="callForPaper.html">Call for Papers</a>
                             </li>
-                            <li><a class="dropdown-item" href="acceptedPapers.html">Accepted Papers</a>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="acceptedPapers.html">Accepted Papers</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notice.html" id="aboutDropdown" role="button" aria-expanded="false">Notice</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html" id="aboutDropdown" role="button" aria-expanded="false">Events</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Latest Update</a>
+                        <ul class="dropdown-menu bg-light border-0">
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="notice.html">Notice</a>
+                            </li>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="news.html">News</a>
+                            </li>
+                            <li class="dropdown-item-list"><a class="dropdown-item" href="events.html">Events</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="gallery.html" id="aboutDropdown" role="button" aria-expanded="false">Gallery</a>
@@ -212,95 +321,142 @@ h4{
 
 
     <div class="content">
-        <h4> Latest Call for Papers circular: The Jahangirnagar Review, Volume 48, 2024</h4>
+        <h4 style="color: rgb(0,30, 67);"> Latest Call for Papers circular: The Jahangirnagar Review, Volume 48, 2024</h4>
         <div class="img_container">
             <img src="circular.png">
         </div>
     </div>
 
 
-
-
-
-<footer class="bg-secondary bg-gradient mt-5 mb-0">
-    <div class="row">
-        <!--Logo & Title-->
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-            <div class="card h-100 text-center border-0 bg-secondary bg-gradient">
-                <div class="card-body m-auto">
-                    <!-- d-flex for logo and title -->
-                    <div class="d-flex align-items-center ms-4">
-                        <img src="https://w7.pngwing.com/pngs/437/522/png-transparent-jahangirnagar-university-school-college-dhaka-others-text-logo-symmetry.png" 
-                        alt="Brand Logo" 
-                        class="me-2 footer-logo">
-                        <span class="fs-1 fw-bold text-white">IBA-JU</span>
+    <footer class="mt-5 mb-0">
+        <!--Upper Footer-->
+        <div class="container mb-5">
+            <div class="row justify-content-between">
+                <!--About Us-->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card h-100 text-justify border-0" id="upper-footer">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">About IBA-JU</h5>
+                            <p class="card-text text-body-tertiary">
+                                The Institute of Business Administration, Jahangirnagar University (IBA-JU) is a pioneer in
+                                business education in Bangladesh, offering undergraduate and postgraduate programs that
+                                prepare students for global success. Renowned for its academic excellence and vibrant campus
+                                life, IBA-JU is dedicated to fostering leadership, innovation, and professional excellence. 
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+    
+                <!--Academics-->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card h-100 text-justify border-0 ms-5" id="upper-footer">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Academics</h5>
+                            <ul class="list-unstyled">
+                                
+                                <li><a href="bba.html" class="footer-links">Undergraduate Programs</a></li>
+                                <li><a href="#" class="footer-links">Postgraduate Programs</a></li>
+                                <li><a href="campuslife.html" class="footer-links">Institute Overview</a></li>
+                                <li><a href="admission.html" class="footer-links">How to Apply</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- Text below logo and title -->
-                    <div class="mt-2 ms-0">
-                        <h6 class="mb-0 text-white">Institute of Business Administration</h6>
-                        <h6 class="mt-0 text-white">Jahangirnagar University</h6>
+                </div>
+
+                <!--Quick Links-->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card h-100 text-justify border-0 ms-1" id="upper-footer">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="club.html" class="footer-links">Student Activities</a></li>
+                                <li><a href="#" class="footer-links">About IBA-JU</a></li>
+                                <li><a href="events.html" class="footer-links">Events</a></li>
+                                <li><a href="notice.html" class="footer-links">Notices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Contact Us-->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card h-100 text-justify border-0" id="upper-footer">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-envelope text-danger me-2"></i> <!-- Envelope Icon for email -->
+                                    <a href="mailto:iba-ju@juniv.edu" class="footer-links">iba-ju@juniv.edu</a>
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-envelope text-danger me-2"></i> <!-- Envelope Icon for email -->
+                                    <a href="mailto:contact@iba-ju.edu.bd" class="footer-links">contact@iba-ju.edu.bd</a>
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-file-earmark-text text-danger me-2"></i> <!-- Fax Icon -->
+                                    <span class="footer-links">(88) 02-7791052</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-geo-alt text-danger me-2"></i> <!-- Location Icon for address -->
+                                    <span class="text-body-tertiary">IBA-JU</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="ms-4 text-body-tertiary">Jahangirnagar University</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="ms-4 text-body-tertiary">Savar, Dhaka-1342, Bangladesh</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--Useful Links-->
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-            <div class="card h-100 text-center border-0 bg-secondary bg-gradient">
-                <div class="card-body d-flex flex-column pt-4">
-                    <h3 class="card-title fw-bold text-white text-decoration-underline">Useful Links</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-links">People</a></li>
-                        <li><a href="#" class="footer-links">Campus Life</a></li>
-                        <li><a href="#" class="footer-links">BBA Program</a></li>
-                        <li><a href="#" class="footer-links">MBA Program</a></li>
-                        <li><a href="#" class="footer-links">WMBA Program</a></li>
-                        <li><a href="#" class="footer-links">PhD Program</a></li>
-                        <li><a href="#" class="footer-links">Admission</a></li>
-                    </ul>
+        <!--Lower Footer-->
+        <div id="lower-footer">
+            <div class="container">
+                <div class="row align-items-center"> 
+                    <!--Logo-->
+                    <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
+                        <div class="card h-100 border-0">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYlbsTrgYJ3f7N-4_XgxyE9s4zMmAVZUpbw&s" 
+                                        alt="Brand Logo" 
+                                        class="me-2 footer-logo">
+                                    <span class="fs-1 fw-bold">IBA-JU</span>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+        
+                    <!--Copyright-->
+                    <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
+                        <div class="card h-100 text-justify border-0">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-title text-body-tertiary">&copy; Institute of Business Administration(IBA-JU)</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!--Links-->
+                    <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
+                        <div class="card h-100 text-justify border-0">
+                            <div class="card-body d-flex flex-column">
+                                <ul class="list-unstyled d-flex flex-row flex-wrap">
+                                    <li class="ms-2 me-2"> <a href="google.com" class="footer-links"> Student </a></li>
+                                    <li class="ms-2 me-2"> <a href="people.html" class="footer-links"> Faculty </a></li>
+                                    <li class="ms-2 me-2"> <a href="journal.html" class="footer-links"> Research </a></li>
+                                    <li class="ms-2"> <a href="alumni.html" class="footer-links"> Community </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!--Contact-->
-        <div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-            <div class="card h-100 align-items-center border-0 bg-secondary bg-gradient text-justify">
-                <div class="card-body d-flex flex-column pt-4 text-left">
-                    <h3 class="card-title fw-bold text-white text-decoration-underline">Contact Us</h3>
-                    <ul class="list-unstyled">
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-envelope-fill me-2"></i> <!-- Envelope Icon for email -->
-                            <a href="mailto:iba-ju@juniv.edu" class="footer-links">iba-ju@juniv.edu</a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-envelope-fill me-2"></i> <!-- Envelope Icon for email -->
-                            <a href="mailto:contact@iba-ju.edu.bd" class="footer-links">contact@iba-ju.edu.bd</a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-text-fill me-2"></i> <!-- Fax Icon -->
-                            <span class="text-white">(88) 02-7791052</span>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <i class="bi bi-geo-alt-fill me-2"></i> <!-- Location Icon for address -->
-                            <span class="text-white">IBA-JU, Jahangirnagar University</span>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <i> </i>
-                            <p class="text-white ms-4">Savar, Dhaka-1342, Bangladesh</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-dark bg-gradient text-center">
-        <h6 class="text-white fw-bold p-4 mb-0">
-            Copyright &copy; Institute of Business Administration (IBA-JU)
-        </h6>
-    </div>
-</footer>
-
+        </div>        
+    </footer>
 
 <!--Bootstrap JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
