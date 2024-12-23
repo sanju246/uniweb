@@ -182,7 +182,7 @@
 
     /* Stack counters vertically on smaller screens */
     .counters {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
