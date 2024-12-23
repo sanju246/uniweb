@@ -257,10 +257,14 @@
     margin-bottom: 10px; 
 }
 
+.campus-text {
+    color: black; /* Make text black */
+    text-align: justify; /* Justify text */
+}
 
 
 
-/* Card Styles */
+/* program section */
 .program-section .card-undergraduate {
     background-color: #041838; 
     color: #ffffff !important;
@@ -352,6 +356,7 @@
     font-size: 1rem;
     color: #ffffff; 
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* View all link container */
